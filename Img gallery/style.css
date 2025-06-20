@@ -30,12 +30,19 @@
 
 .search h1 {
     font-size: 2.65rem;
-    font-weight: 600;
+    font-weight: 800;
+    background: linear-gradient(90deg, #d3792b,white, #00b4fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.search p {
+.search h2 {
     font-size: 1.5rem;
     margin-top: 8px;
+    background: linear-gradient(90deg, #07a0f9,white, #f4f801);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
 }
 .search .search-box {
     height: 55px;
