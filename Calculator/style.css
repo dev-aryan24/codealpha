@@ -1,0 +1,82 @@
+/* style.css */
+
+body {
+  background: linear-gradient(135deg, #e0f7fa, #d1c4e9);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Calculator container with dim and hover effects */
+.calculator {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 360px;
+  transition: all 0.4s ease;
+  opacity: 0.8;
+  transform: scale(0.98);
+}
+
+/* Active on hover */
+.calculator:hover {
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+  background: #f1f1f1;
+  color: #333;
+  font-size: 2em;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: right;
+  margin-bottom: 15px;
+  overflow-x: auto;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 10px;
+  background: #e0e0e0;
+  color: #000;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #d0d0d0;
+  transform: scale(1.05);
+}
+
+.equal {
+  background: #4caf50;
+  color: white;
+}
+
+.equal:hover {
+  background: #45a049;
+}
+
+.clear {
+  background: #f44336;
+  color: white;
+}
+
+.clear:hover {
+  background: #d32f2f;
+}
